@@ -1,6 +1,6 @@
 var mysql = require("mysql");
 
-
+var PORT = process.env.PORT || 3306; 
 
 
 if (process.env.JAWSDB_URL) {
@@ -10,7 +10,8 @@ if (process.env.JAWSDB_URL) {
 		host: 'otmaa16c1i9nwrek.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
 		user: 'j2xj1vfb3jfjf9c5',
 		password: 'z68nkslhezkxore6',
-		database: 'burgers_db'
+		database: 'burgers_db',
+		port: PORT
 	});
 };
 
